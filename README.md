@@ -1,9 +1,9 @@
 <h1>Cars rent project</h1>
-<h3>Description:</h3>
+<h1>Description:</h1>
 <ol>
 <li>Website for car rent</li>
 </ol>
-<h3>Running app:</h3>
+<h1>Running app:</h1>
 <ol>
 <li>Run terminal;</li>
 <li>Clone project in your workspace using <b>git clone https://github.com/dannycrief/cars-rent</b>;</li>
