@@ -1,4 +1,4 @@
-<h1>Cars_project</h1>
+<h1>Cars rent project</h1>
 <h3>Description:</h3>
 <ol>
 <li>Website for car rent</li>
