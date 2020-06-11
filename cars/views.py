@@ -40,15 +40,19 @@ def search(request):
 
     query = request.GET.get('q')
 
-    results = Car.objects.filter(
-        Q(brand__icontains=query) |
-        Q(model__icontains=query)
-    )
+    if query:
+        results = Car.objects.filter(
+            Q(brand__icontains=query) |
+            Q(model__icontains=query)
+        )
+    else:
+        results = Car.objects.all()
 
     pages = pagination(request, results, num=1)
 
     context = {
         'items': pages[0],
         'page_range': pages[1],
+        'query': query,
     }
     return render(request, template, context)
