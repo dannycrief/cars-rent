@@ -1,11 +1,7 @@
 from django.shortcuts import render, get_list_or_404
 from django.db.models import Q
-from django.views.generic.list import ListView
-from django.views.generic.detail import DetailView
-from django.contrib import messages
 
 from cars_project.config_pagination import pagination
-
 from .models import Car
 
 
@@ -25,10 +21,10 @@ def car_list(request):
 
 # TODO: Make it using DetailView
 def car_detail(request, slug):
-    template = 'cars/car.html'
+    template = 'car.html'
     car = get_list_or_404(Car, slug=slug)
     context = {
-        'car': car
+        'cars': car
     }
     return render(request, template, context)
 

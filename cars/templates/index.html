@@ -2,7 +2,6 @@
 {% load static %}
 {% block index %}
     <div class="container">
-{#        {% include 'pagination.html' %}#}
         {% if messages %}
             {% for message in messages %}
                 <div class="alert alert-warning" role="alert">
@@ -16,8 +15,7 @@
                     <div class="card">
                         <img src="{{ car.image.url }}" class="card-img-top" alt="{{ car.brand }} {{ car.model }}">
                         <div class="card-body">
-                            {#{% url 'cars:car-detail' car.slug %}#}
-                            <a href="#" class="stretched-link"><h5
+                            <a href="{% url 'cars:car-detail' car.slug %}" class="stretched-link"><h5
                                     class="card-title">{{ car.brand }} {{ car.model }}</h5></a>
                             {% if car.transmission == 1 %}
                                 <p class="card-text">Transition:
