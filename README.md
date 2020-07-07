@@ -3,15 +3,17 @@
 <ol>
 <li>Website for car rent</li>
 </ol>
+
 <h1>Running app:</h1>
 <ol>
-<li>Run terminal;</li>
-<li>Clone project in your workspace using <b>git clone https://github.com/dannycrief/cars-rent</b>;</li>
-<li>Create virtual environment and activate it;</li>
-<li>Go to this repo directory using <b>cd cars-rent</b>;</li>
-<li>Install requirements using <b>pip install -r requirements.txt</b></li>
-<li>Migrate it: <b>python manage.py migrate</b></li>
-<li>If everything is okay, run it by using <b>python manage.py runserver</b></li>
+    <li>Run terminal;</li>
+    <li>Clone project in your workspace using <b>git clone https://github.com/dannycrief/cars-rent</b>;</li>
+    <li>Create virtual environment and activate it;</li>
+    <li>Go to this repo directory using <b>cd cars-rent</b>;</li>
+    <li>Install requirements using <b>pip install -r requirements.txt</b></li>
+    <li>Make <b>python manage.py collectstatic</b></li>
+    <li>Migrate it: <b>python manage.py migrate</b></li>
+    <li>If everything is okay, run it by using <b>python manage.py runserver</b></li>
 </ol>
 <h1>Contact:</h1>
 <ol>
