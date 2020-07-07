@@ -10,3 +10,7 @@ app.log
 
 media/media
 media/media/
+
+*.pyc
+.idea
+.env
