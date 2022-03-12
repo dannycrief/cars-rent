@@ -6,6 +6,6 @@ requests==2.23.0
 dj_database_url
 django-debug-toolbar==2.2
 sentry_sdk==0.14.4
-Pillow==7.1.2
+Pillow==9.0.1
 python-dotenv==0.11.0
 psycopg2==2.8.4
